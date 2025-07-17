@@ -1,35 +1,78 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fef9f4;
-  text-align: center;
-  padding: 50px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  max-width: 500px;
-  margin: auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
 }
 
 #joke-box {
-  margin: 20px 0;
-  padding: 20px;
-  background: #f3f3f3;
-  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  min-height: 100px;
+  transition: all 0.3s ease;
+}
+
+#setup {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#punchline {
+  color: #555;
+  font-style: italic;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ffcb05;
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffc107;
+  background-color: #0056b3;
+}
+
+/* Loader animation */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
 }

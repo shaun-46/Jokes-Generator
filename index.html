@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Random Joke Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>😂 Random Joke Generator</h1>
+    <h1>🤣 Random Joke Generator</h1>
+
+    <!-- Loader (Hidden initially) -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Joke box -->
     <div id="joke-box">
-      <p id="setup">Click the button to get a joke!</p>
+      <p id="setup"></p>
       <p id="punchline"></p>
     </div>
-    <button id="get-joke">Get Joke</button>
+
+    <button onclick="getJoke()">Get a Joke</button>
   </div>
 
   <script src="script.js"></script>
